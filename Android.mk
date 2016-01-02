@@ -94,6 +94,8 @@ ifneq ($(TARGET_SIMULATOR),true)
 LOCAL_C_INCLUDES += external/stlport/stlport 
 LOCAL_C_INCLUDES += bionic		# very important!
 LOCAL_SHARED_LIBRARIES += libstlport libdl
+else
+LOCAL_LDLIBS += -lpthread
 endif
 
 LOCAL_MODULE := libzeromq
