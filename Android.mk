@@ -98,5 +98,10 @@ else
 LOCAL_LDLIBS += -lpthread
 endif
 
+HEADERS := include/zmq.h \
+	include/zmq_utils.h
+
+LOCAL_COPY_HEADERS := $(HEADERS)
+
 LOCAL_MODULE := libzeromq
 include $(BUILD_SHARED_LIBRARY)
