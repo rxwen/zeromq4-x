@@ -19,7 +19,6 @@ LOCAL_MODULE_TAGS := eng
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/include/ \
 					$(LOCAL_PATH)/builds/android/
 
-#LOCAL_CFLAGS += -D_GNU_SOURCE -DNO_GETLINE -DNO_RPMATCH
 LOCAL_SRC_FILES := \
 	src/pull.cpp \
 	src/object.cpp \
